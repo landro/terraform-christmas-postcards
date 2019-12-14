@@ -41,7 +41,7 @@ expression (these features were added to Terraform in version 0.12.0 and 0.12.6 
 [templatefile](https://www.terraform.io/docs/configuration/functions/templatefile.html) expression, and you end up with this
 Terraform "one-liner":
 
-```hcl-terraform
+```hcl
 resource "local_file" "christmascard" {
   for_each = { for address in csvdecode(file("${path.module}/addresses.csv")) : address.country => address }
   content  = templatefile("${path.module}/card.tmpl", each.value)
