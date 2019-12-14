@@ -63,7 +63,7 @@ Source code
 
 If you're keen on running this example on your laptop, do the following:
 
-```shell script
+```shell
 git clone https://github.com/landro/terraform-christmas-postcards
 cd terraform-christmas-postcards
 terraform init
